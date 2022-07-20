@@ -6,19 +6,127 @@
 }
 
 .container {
-    background: rgb(11, 99, 11);
-    color: #fff;
     display: flex;
     flex-direction: column;
-    height: 100vh;
-    width: 100%;
+    min-height: 100vh;
+
 }
 
 .header {
+    background-color: black;
     width: 100%;
     min-height: 40px;
-    padding: 15px;
+    padding: 10px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    
+}
+
+.navebarImg {
+    width: 250px;
+    
+}
+
+.navebarBnt {
+    align-items: center;
+    gap: 10px; 
+    display: flex;
+}
+
+.naveBnt {
+    background-color: black; 
+    font-size: 22px;
+    border: 2px solid transparent;
+    color: #fff;
+    cursor: pointer;
+    transition: 0.4s;
+    padding: 6px;
+}
+
+.naveBnt:hover {
+    border: 2px solid red;
+    color: red;
+    font-size: 25px;
+    border-radius: 10px;
+}
+
+.mainConteiner {
+    background-color:rgb(4, 102, 4);
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+}
+
+.firstItem {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 10px;
+    gap: 10px;
+}
+
+.firstImg {
+    width: 300px;
+    height: 300px;
+    border-radius: 10px;
+}
+
+.firstDescription {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.monarcaTitle {
+    font-size: 70px;
+}
+
+.monarcaSlogan {
+    font-size: 40px;
+ }
+ 
+ .monarcatexto {
+    font-size: 20px;
+ }
+
+ .mainCard {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 200px;
+    height: 250px;
+ }
+
+ .mainCardImg {
+    
+ }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 720px) {
+    .header {
+        flex-wrap: wrap;
+    }
 }
