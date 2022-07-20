@@ -6,117 +6,83 @@
 }
 
 .container {
-    display: flex;
+    width: 100%;
+    height: auto;
+    border: 2px solid black;
+    display: flex; 
     flex-direction: column;
-    min-height: 100vh;
-    
-
+    flex-wrap: wrap;
 }
 
 .header {
-    background-color: black;
-    width: 100%;
-    min-height: 40px;
-    padding: 10px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    
+    width: 100%;
+    height: auto;
+    background-color: black;
+    flex-wrap: wrap;
 }
 
 .navebarImg {
-    width: 250px;
-    
-}
-
-.navebarBnt {
-    align-items: center;
-    gap: 10px; 
-    display: flex;
+    width: 220px;
+    height: auto;
+    padding: 15px;
+    gap: 10px;
 }
 
 .naveBnt {
-    background-color: black; 
-    font-size: 22px;
-    border: 2px solid transparent;
+    background: black;
     color: #fff;
+    padding: 10px;
     cursor: pointer;
     transition: 0.4s;
-    padding: 6px;
 }
 
 .naveBnt:hover {
     border: 2px solid red;
     color: red;
-    font-size: 25px;
     border-radius: 10px;
 }
 
 .mainConteiner {
-    background-color:rgb(4, 102, 4);
-    color: #fff;
-    display: flex;
-    flex-direction: column;
-    justify-items: center;
+    background: rgb(1, 136, 1);
+    max-width: 1440px;
+    display: grid;
+    flex-wrap: wrap;
+    grid-template-columns: repeat(3fr 1fr);
+    grid-template-areas: 
+    "firstItem firstItem firstItem"
+    "item1 item2 item3"
+    "item4 item5 item6"
+    "item7 item8 item9";
+    gap: 20px;
+    padding: 20px;
+    justify-content: center;
     align-items: center;
 }
 
 .firstItem {
     display: flex;
     flex-direction: column;
+    height: 150px;
+    border: 2px solid black;
+    grid-area: firstItem;
     justify-content: center;
     align-items: center;
-    width: 100%;
     padding: 10px;
-    gap: 10px;
-    background-color:rgb(4, 102, 4);
-    color: #fff;
-    
-}
-
-.firstImg {
-    width: 300px;
-    height: 300px;
-    border-radius: 10px;
-}
-
-.firstDescription {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
 }
 
 .monarcaTitle {
+    color: #fff;
     font-size: 70px;
+    gap: 10px;
 }
 
 .monarcaSlogan {
+    color: #fff;
     font-size: 40px;
- }
- 
- .monarcatexto {
-    font-size: 20px;
- }
-
-.mainConteiner {
-    padding: 20px;
-    display: grid;
-    grid-template-columns: 3fr  ;
-    flex: 1 0 auto;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    gap: 20px 20px;
-    grid-template-areas: 
-    "firstItem firstItem firstItem"
-    "item1 item2 item3"
-    "item5 item4 item6"
-    "item7 item8 item9"
-    
-    
-    
+    gap: 10px;
 }
 
 .mainCard {
@@ -124,108 +90,14 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width:  500px;
-    max-height: auto;
-    background-color: #fff;
-    gap: 10px 10px;
-    color: black;
-    padding: 5px;
-    text-align: center;
+    background: #fff;
+    max-width: 300px;
+    max-height: 300px;
+    border: 2px solid black;
+    padding: 20px;
 }
 
 .mainCardImg {
-    width: 300px;
+    max-width: 150px;
     height: auto;
-}
-
-.cardTitle{
-    font-size: 30px;
-    text-align: center;
-}
-
-.cardDescription {
-    font-size: 20px;
-    text-align: center;
-}
-
-
-
-.item1 {
-    grid-area: item1;
-}
-
-.item2 {
-    grid-area: item2;
-}
-
-.item3 {
-    grid-area: item3;
-}
-
-.item4 {
-    grid-area: item4;
-}
-
-.item5 {
-    grid-area: item5;
-}
-
-.item6 {
-    grid-area: item6;
-}
-
-.item7 {
-    grid-area: item7;
-}
-
-.item8 {
-    grid-area: item8;
-}
-
-.item9 {
-    grid-area: item9;
-}
-
-.footer {
-    background-color: black;
-    width: 100%;
-    min-height: 40px;
-    padding: 10px;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-}
-
-.footerImg {
-    width: 250px;
-}
-
-.footerAnchor {
-    text-decoration: none;
-    color: #fff;
-    font-size: 20px;
-    cursor: pointer;
-    transition: 0.4s;
-}
-
-
-.footerAnchor:hover {
-    border: 2px solid red;
-    color: red;
-    font-size: 25px;
-    border-radius: 10px;
-}
-
-
-
-
-
-
-@media (max-width: 720px) {
-    .header {
-        flex-wrap: wrap;
-    }
-    .footer {
-        flex-wrap: wrap;
-    }
 }
